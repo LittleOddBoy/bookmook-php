@@ -1,0 +1,1 @@
+<div class="flex max-h-svh min-h-svh overflow-hidden bg-primary text-primary-content">

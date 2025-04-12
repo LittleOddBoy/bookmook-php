@@ -1,0 +1,13 @@
+Let's discuss my last school project. It is called "Bookmook (بوک موک)"
+
+Bookmook is an online multi-seller bookshop where you can buy new books, or become a shopkeeper and start selling your own books! 
+
+Technically speaking, it's an e-commerce application with multi-seller business architecture, designed by an MVC  folk in PHP. It's vanilla PHP and I am using MySQL as the database solution for it. 
+
+There are several aspects of this that I want to talk about, but first we have to make sure you understand the project's pieces correctly and completely. 
+
+Bookmook is designed to be an imaginary company that hosts several bookshops at once, with the ability to handle several books and their shops and shopkeepers at one shot. It is also here for promoting specific books and make them bolder. A user can simply turn out to be a shopkeeper, by just requesting to be a shopkeeper. After approving the request by admins or the owner, the user can start selling books. Bookmook has a somehow weird technical and business flow in books' case. Bookmook has a limited variety of books inside of it. The shop knows some books and approved them. If you, as a shopkeeper, want to sell a book that we don't know, you must wait until we process your request and approve it. When it is approved, we know the book. From that point, if any other shopkeeper requests for selling that book, we automatically approve their request and show the same known information that is common among all the sellers of a specific book. That means if we know White Nights from where shopkeeper number 1 requested, when shopkeeper 2 requests to sell the same book, we automatically approve their request and make it available with the same information (author, description, etc.) that shopkeeper number 1 has to offer. That means all the contextual information about each book is shopkeeper-agnostic, but their price and stock is specifically shopkeeper-specific. 
+
+Campaigns are the other part of our bookshop. They are here for promoting specific kinds of books. There is no discount in this version (which I call v0.5 of Bookmook,) it's just about showing them differently. I know, it's funny and hilarious, but that's just it for now.
+
+It seems to be a simple, yet another e-commerce project. But it's whole another story for me. 

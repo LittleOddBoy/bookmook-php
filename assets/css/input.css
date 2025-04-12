@@ -1,0 +1,129 @@
+@import "tailwindcss";
+@source "./index.php";
+@source "./app";
+@plugin "@tailwindcss/typography";
+@plugin "daisyui";
+
+@font-face {
+  font-family: IRANSansX;
+  font-style: normal;
+  font-weight: 100;
+  src:
+    url("../fonts/IRANSansX-Thin.woff") format("woff"),
+    url("../fonts/IRANSansX-Thin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANSansX;
+  font-style: normal;
+  font-weight: 200;
+  src:
+    url("../fonts/IRANSansX-UltraLight.woff") format("woff"),
+    url("../fonts/IRANSansX-UltraLight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANSansX;
+  font-style: normal;
+  font-weight: 300;
+  src:
+    url("../fonts/IRANSansX-Light.woff") format("woff"),
+    url("../fonts/IRANSansX-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANSansX;
+  font-style: normal;
+  font-weight: 500;
+  src:
+    url("../fonts/IRANSansX-Medium.woff") format("woff"),
+    url("../fonts/IRANSansX-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANSansX;
+  font-style: normal;
+  font-weight: 600;
+  src:
+    url("../fonts/IRANSansX-DemiBold.woff") format("woff"),
+    url("../fonts/IRANSansX-DemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANSansX;
+  font-style: normal;
+  font-weight: 800;
+  src:
+    url("../fonts/IRANSansX-ExtraBold.woff") format("woff"),
+    url("../fonts/IRANSansX-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANSansX;
+  font-style: normal;
+  font-weight: 900;
+  src:
+    url("../fonts/IRANSansX-Black.woff") format("woff"),
+    url("../fonts/IRANSansX-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANSansX;
+  font-style: normal;
+  font-weight: bold;
+  src:
+    url("../fonts/IRANSansX-Bold.woff") format("woff"),
+    url("../fonts/IRANSansX-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANSansX;
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url("../fonts/IRANSansX-Regular.woff") format("woff"),
+    url("../fonts/IRANSansX-Regular.woff2") format("woff2");
+}
+
+@theme {
+  --font-sans: IRANSansX;
+}
+
+*:focus {
+  outline: none;
+}
+
+@plugin "daisyui/theme" {
+  name: "Bookmook";
+  default: false;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: #f6fae5;
+  --color-base-200: #e8ecd7;
+  --color-base-300: #ced2bd;
+  --color-base-content: #0a2010;
+  --color-primary: #1f4529;
+  --color-primary-content: #f6fae5;
+  --color-secondary: #d9b382;
+  --color-secondary-content: #020e05;
+  --color-accent: #583b1d;
+  --color-accent-content: #f6fae5;
+  --color-neutral: #e2e2e2;
+  --color-neutral-content: #1f1f1f;
+  --color-info: #1c3a63;
+  --color-info-content: #f6fae5;
+  --color-success: #2e7d32;
+  --color-success-content: #f6fae5;
+  --color-warning: #e5a100;
+  --color-warning-content: #1f1f1f;
+  --color-error: #b3261e;
+  --color-error-content: #f6fae5;
+  --radius-selector: 0rem; /* 2rem */
+  --radius-field: 0rem; /* 2rem */
+  --radius-box: 0rem; /* 0.5rem */
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1.5px;
+  --depth: 0;
+  --noise: 0;
+}
